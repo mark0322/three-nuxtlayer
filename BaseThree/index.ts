@@ -50,6 +50,9 @@ export class BaseThree extends THREE.EventDispatcher {
     this.init(dom)
 
     this.utils = new UtilsThree(dom, this.renderer as any, this.scene, this.camera, this.tick)
+
+    this.renderer.setClearColor(0x3399ee)
+    this.scene.background = new THREE.Color(0x3399ee)
   }
 
   // temp
