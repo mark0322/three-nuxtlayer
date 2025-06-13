@@ -10,9 +10,9 @@
 
 <script setup lang='ts'>
 import * as THREE from 'three'
-import { BaseThree } from './utils/BaseThree'
+// import { BaseThree } from './BaseThree'
 
-class Three extends BaseThree {
+class Three extends ThreeBase {
   constructor(dom: HTMLDivElement) {
     super(dom, {
       renderer: {
